@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // arrow-function
+      let left = parseInt(prompt("Enter left value"));
+      let right = parseInt(prompt("Enter right value"));
+      let bottum = parseInt(prompt("Enter bottum value"));
+      let triangle = () =>
+        left + right + bottum === 180 ? "triangle is valid" : "triangle is not";
+      let c = triangle();
+      console.log(c);
+      
+      //   simple-function
+
+      let left2 = parseInt(prompt("Enter left value"));
+      let right2 = parseInt(prompt("Enter right value"));
+      let bottum2 = parseInt(prompt("Enter bottum value"));
+
+      function triangle() {
+        if (left2 + right2 + bottum2 === 180) {
+          return "triangle is valid";
+        } else {
+          return "triangle is not";
+        }
+      }
+      let c1 = triangle();
+      console.log(c1);
+    </script>
+  </body>
+</html>
